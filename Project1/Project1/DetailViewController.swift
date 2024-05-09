@@ -7,6 +7,8 @@ class DetailViewController: UIViewController {
     
     // MARK: Properties
     var selectedImage: String?
+    var selectedPictureNumber = 0
+    var totalPictures = 0
     
     // MARK: Life Cycle
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +36,7 @@ class DetailViewController: UIViewController {
     }
     
     func setUI() {
-        title = selectedImage
+        title = "image \(selectedPictureNumber)"
         navigationItem.largeTitleDisplayMode = .never
     }
 

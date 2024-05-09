@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        cell.textLabel?.text = "image \(indexPath.row + 1)"
         return cell
     }
     
@@ -29,6 +29,8 @@ class ViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             // создает новый экземпляр view controller, который определен в сториборде (Storyboard) с идентификатором "Detail". instantiateViewController(withIdentifier:) - это метод, который используется для создания экземпляра контроллера представления из сториборда по его идентификатору.
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedPictureNumber = indexPath.row + 1
+            vc.totalPictures = pictures.count
             //        // indexPath.row - это индекс строки, которая была выбрана пользователем.
             navigationController?.pushViewController(vc, animated: true)
             //  Эта строка переключает (pushes) контроллер представления vc на вершину стека навигации. Если текущий контроллер представления находится внутри UINavigationController, это приведет к отображению контроллера vc на экране с анимацией (если animated установлено в true).
@@ -51,6 +53,7 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+        pictures.sort()
     }
 
 }
