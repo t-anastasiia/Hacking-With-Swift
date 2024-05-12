@@ -27,9 +27,9 @@
   ```bash
   open Project1.xcodeproj
   ```
-
+<h1></h1>
 <h2 align="center"><a href=https://github.com/t-anastasiia/Hacking-With-Swift/tree/main/Project1>Проект №1</a></h2>
-<p align="center">Первое приложение представляет собой TableViewController, в котором можно просматривать фото котиков (изначально в курсе был Storm Viewer, но мне показалось это сликшом скучным).</p>
+<p align="center">Первое приложение представляет собой TableViewController, в котором можно просматривать фото котиков (изначально в курсе был Storm Viewer, но мне показалось это слишком скучным).</p>
 
 <h2 align="center">Работа приложения</h2>
 <ol type="1" align="left">
@@ -49,3 +49,25 @@
 </div>
   
 <p align="center">изображения котиков взяты с <a href="https://www.freepik.com/">Freep!k</a> и <a href="https://unsplash.com/images/animals/cat">Unsplash</a></p>
+
+<h1></h1>
+
+<h2 align="center"><a href=https://github.com/t-anastasiia/Hacking-With-Swift/tree/main/Project2>Проект №2</a></h2>
+<p align="center">Второе приложение - это скорее игра, заключающаяся в угадывании флага загаданной страны. Чутка усложнила проект, так как оригинальный показался скучноватым. В коде можете найти комментарии и пояснения ко всем нововведениям!</p>
+
+<h2 align="center">Работа приложения</h2>
+<ol type="1" align="left">
+  <li>После загрузки приложения открывается окно, где сразу же начинается игра. Есть 3 buttons в виде флагов, а также streak за эту игру и лучший за все игры (реализовано с помощью UserDefaults)(скриншот 1)</li>
+  <li>При выборе верной страны, ее тень становится зеленой и увеличивается счетчик streak(скриншот 2)</li>
+  <li>При неверном выборе, тень выбранного флага сменяется на красный, а счетчик обнуляется(скриншот 3)</li>
+  <li>Если нынешний streak становится больше best streak, то счетчик обоих увеличивается до следующего фейла</li>
+  <li>При повторном запуске приложения best streak будет показан за все предыдущие игры на данном устройстве</li>
+</ol>
+
+<h2 align="center">Скриншоты</h2>
+<div align="center">
+  <img src="https://github.com/t-anastasiia/Hacking-With-Swift/assets/121961781/bda740f1-d2bf-4317-9db9-77b317e29abc" width="118" height="255">
+  <img src="https://github.com/t-anastasiia/Hacking-With-Swift/assets/121961781/49859303-f40b-4806-b94f-e562c5b77962" width="118" height="255">
+  <img src="https://github.com/t-anastasiia/Hacking-With-Swift/assets/121961781/8aaec236-719b-42f0-a65b-f6b574b7cb99" width="118" height="255">
+  <img src="https://github.com/t-anastasiia/Hacking-With-Swift/assets/121961781/e2e19cc2-05ff-4de1-b3c9-5e8a395f8893" width="118" height="255">
+</div>
